@@ -9,27 +9,23 @@ divideByThree(6);
 function averageOfTwo(num1, num2) {
   /* Returns the average of two numbers, num1 and num2. */
   // Your code here
-
+  return (num1 + num2) / 2;
 }
-
-
+averageOfTwo(4, 5);
 
 function averageOfFour(num1, num2, num3, num4) {
   /* Takes in four numbers. The function should return the average of all of
     the numbers. */
   // Your code here
-
+  return (num1 + num2 + num3 + num4) / 4;
 }
-
-
+averageOfFour(1, 2, 3, 4);
 
 function doubler(nums) {
   /* Takes an array of numbers and returns a new array where every element of
     the original array is multiplied by 2. */
   // Your code here
 }
-
-
 
 function combineArrays(arr1, arr2) {
   /* Takes in two arrays of numbers and returns the two arrays combined into
