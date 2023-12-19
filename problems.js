@@ -47,14 +47,20 @@ function combineArrays(arr1, arr2) {
   return arr1.concat(arr2);
 }
 
-combineArrays([1, 2, 3], [4, 5, 6])
+combineArrays([1, 2, 3], [4, 5, 6]);
 
 function wordWithinArray(word, arr) {
   /* Takes in both a word and an array of words as arguments and returns a
-    boolean that returns true if that string is located inside of the array, or
-    false if it does not. Use `Array.indexOf`. */
+      boolean that returns true if that string is located inside of the array, or
+      false if it does not. Use `Array.indexOf`. */
+
   // Your code here
+  return arr.indexOf(word) !== -1;
 }
+
+const wordToSearch = "apple";
+const wordsArray = ["mango", "pinya", "apple", "grapes"];
+console.log(wordWithinArray(wordToSearch, wordsArray));
 
 function echo(str) {
   /* Takes in a string and returns that string "echo-ized". E.g.
