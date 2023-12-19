@@ -100,18 +100,29 @@ fizzBuzz(20);
 function hello(name) {
   /* Takes in a string name and returns a string saying "Hello, " to that name. */
   // Your code here
+
+  return "Hello" + name;
 }
+
+hello("JC");
 
 function goodbye(name) {
   /* Takes in a string name and returns a string saying "Bye, " to that name. */
   // Your code here
+
+//   return "Goobye" + name;
 }
+
+// goodbye("John");
 
 function isFive(num) {
   /* Takes in a number, num, and returns `true` if a number is equal to 5 and
     `false` if it is not. */
   // Your code here
+//   return num == 5 ? true : false;
 }
+
+isFive(4);
 
 function isOdd(num) {
   /* Takes in a number and returns `true` if the number is odd and returns
