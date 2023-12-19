@@ -75,9 +75,27 @@ console.log(echo("Mom")); // Output: "MOM!...Mom!...mom!"
 
 function fizzBuzz(max) {
   /* Takes a number, max and returns an array that contains every number from
-    0 to max (not inclusive) that is divisible by either 3 or 5, **but not both**. */
-  // Your code here
+      0 to max (not inclusive) that is divisible by either 3 or 5, **but not both**. */
+
+  const result = [];
+
+  for (let i = 1; i < max; i++) {
+    let isDivisibleBy3 = i % 3 === 0;
+    let isDivisibleBy5 = i % 5 === 0;
+
+    if (
+      (isDivisibleBy3 || isDivisibleBy5) &&
+      !(isDivisibleBy3 && isDivisibleBy5)
+    ) {
+      result.push(i);
+    }
+  }
+
+  return result;
 }
+
+// Example usage:
+fizzBuzz(20);
 
 function hello(name) {
   /* Takes in a string name and returns a string saying "Hello, " to that name. */
