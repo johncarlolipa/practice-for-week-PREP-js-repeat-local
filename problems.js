@@ -64,11 +64,14 @@ console.log(wordWithinArray(wordToSearch, wordsArray));
 
 function echo(str) {
   /* Takes in a string and returns that string "echo-ized". E.g.
-    echo("Mom!"); // => returns "MOM! ... Mom! ... mom!"
-    echo("hey"); // => returns "HEY ... hey ... hey"
-    echo("JUMp"); // => returns "JUMP ... JUMp ... jump" */
+      echo("Mom!"); // => returns "MOM! ... Mom! ... mom!"
+      echo("hey"); // => returns "HEY ... hey ... hey"
+      echo("JUMp"); // => returns "JUMP ... JUMp ... jump" */
   // Your code here
+  return str.toUpperCase() + "!...";
 }
+
+console.log(echo("Mom")); // Output: "MOM!...Mom!...mom!"
 
 function fizzBuzz(max) {
   /* Takes a number, max and returns an array that contains every number from
