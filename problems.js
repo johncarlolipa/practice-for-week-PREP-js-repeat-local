@@ -135,10 +135,14 @@ isOdd(3);
 
 function isSubString(searchString, subString) {
   /* Takes in two strings, `searchString` and `subString`. Should return
-    `true` if `subString` is a part of the`searchString`, regardless of upper
-    or lower case, and `false` if otherwise. */
+      `true` if `subString` is a part of the`searchString`, regardless of upper
+      or lower case, and `false` if otherwise. */
   // Your code here
+  return searchString.toLowerCase().includes(subString.toLowerCase());
 }
+
+// Example usage:
+isSubString("k", "Kim");
 
 function aCounter(word) {
   /* Takes in a word and returns the number of a's within that word. Counts
