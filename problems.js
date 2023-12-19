@@ -110,19 +110,17 @@ function goodbye(name) {
   /* Takes in a string name and returns a string saying "Bye, " to that name. */
   // Your code here
 
-//   return "Goobye" + name;
+  return "Goodbye" + name;
 }
 
-// goodbye("John");
+goodbye("John");
 
 function isFive(num) {
   /* Takes in a number, num, and returns `true` if a number is equal to 5 and
     `false` if it is not. */
   // Your code here
-//   return num == 5 ? true : false;
-}
 
-isFive(4);
+}
 
 function isOdd(num) {
   /* Takes in a number and returns `true` if the number is odd and returns
