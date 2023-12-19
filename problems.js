@@ -25,7 +25,18 @@ function doubler(nums) {
   /* Takes an array of numbers and returns a new array where every element of
     the original array is multiplied by 2. */
   // Your code here
+
+  let doubledNumbers = [];
+
+  for (let number of nums) {
+    let doubledNumber = number * 2;
+    doubledNumbers.push(doubledNumber);
+  }
+
+  return doubledNumbers;
 }
+
+doubler(1, 2, 3, 4);
 
 function combineArrays(arr1, arr2) {
   /* Takes in two arrays of numbers and returns the two arrays combined into
